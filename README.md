@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Desarrollado por Inng. Nelson Roas
+## Desarrollado por Ing. Nelson Roas
 ## Getting Started
 
 # Ejecutar en desarrollo
