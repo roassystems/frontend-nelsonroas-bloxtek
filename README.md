@@ -23,13 +23,23 @@ Ejemplo:
 NEXT_PUBLIC_API_URL=http://127.0.0.1:3000/api/auth/
 NODE_ENV=desarrollo
 NEXT_PUBLIC_APP_NAME=App para demostrar skills Nelson Roas
+PORT=3001
 ```
 ```
 5. Asegurarse que la aplicacion backend configurada en las variables de ambiente anteriores este ejecutandose de forma exitosa
 
 7. Ejecutar la aplicación en dev:
 ```
-npm run start
+```
+npm run dev
+```
+```
+Si necesita especificar otro puerto ejecute 
+npx next start -p 3001
+```
+8. Puede acceder la aplicacion en el siguiente url:
+```
+http://localhost:3001/
 ```
 
 ## Stack usado
