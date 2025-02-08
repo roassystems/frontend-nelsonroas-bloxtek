@@ -5,16 +5,26 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 # Ejecutar en desarrollo
 
-1. Clonar el repositorio
-2. Ejecutar
+1. Clonar el repositorio con el comando
+```
+git clone https://github.com/roassystems/frontend-nelsonroas-bloxtek.git
+```
+2. ubicarse en el directorio del proyecto frontend-nelsonroas-bloxtek y ejecutar el comando:
 ```
 npm install
 ```
-3. Clonar el archivo ```.env.template``` y renombrar la copia a ```
+
+3. ubicarse en el directorio del proyecto backend-nelsonroas y Copiar el archivo ```.env.template``` y renombrar la copia a ```
 .env```
 
-4. Llenar las variables de entorno definidas en el ```.env```
-
+4. Llenar las variables de entorno definidas en el archivo .env 
+```
+Ejemplo:
+NEXT_PUBLIC_API_URL=http://127.0.0.1:3000/api/auth/
+NODE_ENV=desarrollo
+NEXT_PUBLIC_APP_NAME=App para demostrar skills Nelson Roas
+```
+```
 5. Asegurarse que la aplicacion backend configurada en las variables de ambiente anteriores este ejecutandose de forma exitosa
 
 7. Ejecutar la aplicación en dev:
