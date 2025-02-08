@@ -41,7 +41,14 @@ npx next start -p 3001
 ```
 http://localhost:3001/
 ```
-
+# FORMA ALTERNA DE LEVANTAR ESTE BACKEND USANDO DOCKER
+1. Ejecutar comando ```docker build -t imagen-nelsonroas-frontend-bloxtek .```
+```
+```
+2. Ejecutar comando ```docker run -p 3001:3001  -d --rm --name contenedor-nelsonroas-frontendbloxtek --env-file ./.env imagen-nelsonroas-frontend-bloxtek```
+```
+```
+3. La aplicacion corre en la siguiente url: ```http://localhost:3001/```
 ## Stack usado
 * Next 15.1.6
 * Axios 1.7.0
