@@ -14,7 +14,7 @@ git clone https://github.com/roassystems/frontend-nelsonroas-bloxtek.git
 npm install
 ```
 
-3. ubicarse en el directorio del proyecto backend-nelsonroas y Copiar el archivo ```.env.template``` y renombrar la copia a ```
+3. ubicarse en el directorio del proyecto frontend-nelsonroas-bloxtek y Copiar el archivo ```.env.template``` y renombrar la copia a ```
 .env```
 
 4. Llenar las variables de entorno definidas en el archivo .env 
