@@ -11,14 +11,17 @@ export default function Welcome() {
     if (!token) {
       router.push("/");
     }
-  }, [token, router]);
+    if(usuario === null || usuario === undefined){
+      router.push("/");
+    }
+  }, [token, router, usuario]);
 
   return (
-    <div className={styles.welcomeContainer}>
-      <div className={styles.welcomeCard}>
+    <div className={styles.welcomeContainer} suppressHydrationWarning>
+      <div className={styles.welcomeCard} suppressHydrationWarning>
         <h2>¡Bienvenido, {usuario !== null ? usuario.nombre + " " +usuario.apellido : ""}!</h2>
         <p>Correo: {usuario !== null ? usuario.correo : ""}</p>
-        <p>Fecha de acceso: {new Date().toLocaleString()}</p>
+        <p suppressHydrationWarning>Fecha de acceso: {new Date().toLocaleString()}</p>
         <button onClick={logout} className={styles.logoutButton}>Salir</button>
       </div>
     </div>
