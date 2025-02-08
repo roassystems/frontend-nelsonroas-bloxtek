@@ -33,8 +33,8 @@ PORT=3001
 ```
 npm run dev
 ```
-```
-Si necesita especificar otro puerto ejecute 
+Si necesita especificar otro puerto ejecute
+``` 
 npx next start -p 3001
 ```
 8. Puede acceder la aplicacion en el siguiente url:
@@ -44,7 +44,7 @@ http://localhost:3001/
 # FORMA ALTERNA DE LEVANTAR ESTE BACKEND USANDO DOCKER
 1. Ejecutar comando `````
 ```
-`docker build -t imagen-nelsonroas-frontend-bloxtek .
+docker build -t imagen-nelsonroas-frontend-bloxtek .
 ```
 2. Ejecutar comando ``````
 ```
