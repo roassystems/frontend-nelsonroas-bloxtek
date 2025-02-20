@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "cross-env NODE_ENV=production dotenv -e .env -- sh -c 'echo NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL'",
-    "dev": "cross-env NODE_ENV=development dotenv -e .env -- next dev --turbopack",
-    "build": "cross-env NODE_ENV=production dotenv -e .env -- next build",
-    "start": "cross-env NODE_ENV=production dotenv -e .env -- next start",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {

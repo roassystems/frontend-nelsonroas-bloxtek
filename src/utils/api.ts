@@ -1,10 +1,24 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL,
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+// Función para crear la instancia de Axios con baseURL dinámica
+export const createApiInstance = (baseURL) => {
+  return axios.create({
+    baseURL, // Se recibe la URL desde el servidor
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};
 
+export async function getServerSideProps() {
+  // Leer la variable del entorno en el servidor
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "";
+
+  return {
+    props: {
+      apiUrl, // Pasamos la URL como prop al cliente
+    },
+  };
+}
+const api = createApiInstance(getServerSideProps());
 export default api;
