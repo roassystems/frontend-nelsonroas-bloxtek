@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  console.log("CHECANDO VALOR DE VARIABLE DE AMBIENTE PARAD EGUB "+process.env.NEXT_PUBLIC_API_URL);
   return (
     <>
       <ToastContainer />
