@@ -24,7 +24,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'https://frontend-nelsonroas-bloxtek-production.up.railway.app/'
+        hostname: 'frontend-nelsonroas-bloxtek-production.up.railway.app'
       },
       {
         protocol: 'https',
