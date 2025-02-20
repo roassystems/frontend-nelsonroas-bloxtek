@@ -11,4 +11,5 @@ const api = axios.create({
   },
 });
 console.log("API DE URL LEIDA DESDE EL SERVIDOR NEXT1 "+process.env.API_URL);
+console.log("API DE URL LEIDA, VARIABLE DESDE EL BROWSER  "+process.env.NEXT_PUBLIC_API_URL);
 export default api;
