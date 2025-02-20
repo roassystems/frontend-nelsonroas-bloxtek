@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "NODE_ENV=production dotenv -e .env -- sh -c 'echo NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL'",
-    "dev": "NODE_ENV=development dotenv -e .env -- next dev --turbopack",
-    "build": "NODE_ENV=production dotenv -e .env -- next build",
-    "start": "NODE_ENV=production dotenv -e .env -- next start",
+    "prebuild": "cross-env NODE_ENV=production dotenv -e .env -- sh -c 'echo NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL'",
+    "dev": "cross-env NODE_ENV=development dotenv -e .env -- next dev --turbopack",
+    "build": "cross-env NODE_ENV=production dotenv -e .env -- next build",
+    "start": "cross-env NODE_ENV=production dotenv -e .env -- next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "dotenv-cli": "^8.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
