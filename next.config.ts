@@ -30,15 +30,15 @@ const nextConfig = {
 
     return config;
   },
-  env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    API_URL:process.env.API_URL
+  serverRuntimeConfig: {
+    API_URL: process.env.API_URL, // Solo accesible en el servidor
   },
   publicRuntimeConfig: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    API_URL:process.env.API_URL
-  }
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL, // Accesible en el cliente
+  },
  
 };
+console.log("NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
+console.log("API_URL:", process.env.API_URL);
 
 module.exports = nextConfig;
