@@ -14,6 +14,7 @@ import Link from "next/link";
 type LoginForm = z.infer<typeof loginSchema>;
 
 export default function Login() {
+ 
   const { register, handleSubmit, formState: { errors } } = useForm<LoginForm>({
     resolver: zodResolver(loginSchema),
   });
